@@ -11,7 +11,9 @@
     <!-- CSS -->
     <link rel="stylesheet" href="style.css" />
 
+    
     <style>
+
     .btn-primary:hover {
       background: rgb(21, 53, 96);
       background: linear-gradient(80deg, rgba(21, 53, 96, 1) 0%, rgba(37, 125, 164, 1) 46%, rgba(50, 220, 255, 1) 92%);
@@ -25,22 +27,31 @@
       border: 0px;
     }
 
+    .navbar {
+      background-color: none;
+      font-family: Arial, Helvetica, sans-serif
+    }
+
+    footer {
+      background-color: none;
+    }
+
     </style>
 
     <title>Portofolio</title>
   </head>
   <body id="home">
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark shadow-sm bg-success fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-light shadow-sm fixed-top">
       <div class="container">
-        <a class="navbar-brand" href="#">Navbar</a>
+        <a class="navbar-brand fw-bold" href="#">Navbar</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#home">Home</a>
+              <a class="nav-link" aria-current="page" href="#home">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#about">About</a>
@@ -60,7 +71,7 @@
     <!-- Jumbotron -->
     <section class="jumbotron text-center">
       <img src="img/kucing oren.jpg" alt="kucing oren" width="150" class="rounded-circle img-thumbnail" />
-      <h1 class="display-4">Wahyu Ramadhan</h1>
+      <h1 class="display-4" style="font-size: 45px;">Wahyu Ramadhan</h1>
       <p class="lead">Manusia | Freelance</p>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
@@ -74,10 +85,10 @@
 
     <!-- About -->
     <section id="about">
-      <div class="container">
+      <div class="container" style="font-family: Arial, Helvetica, sans-serif;">
         <div class="row text-center mb-3">
           <div class="col">
-            <h2>About Me</h2>
+            <h2 class="fw-bold">About Me</h2>
           </div>
         </div>
         <div class="row justify-content-center fs-5 text-center">
@@ -95,10 +106,10 @@
 
     <!-- Projects -->
     <section id="projects">
-      <div class="container text-center">
+      <div class="container text-center" style="font-family: Arial, Helvetica, sans-serif;">
         <div class="row">
           <div class="col mb-3">
-            <h2>Projects</h2>
+            <h2 class="fw-bold">Projects</h2>
           </div>
         </div>
         <div class="row justify-content-center">
@@ -106,9 +117,9 @@
             <div class="card">
               <img src="project/errorpage.jpg" class="card-img-top" alt="project1" />
               <div class="card-body">
-                <h5 class="card-title">Error Page</h5>
+                <h5 class="card-title fw-bold">Error Page</h5>
                 <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias architecto necessitatibus corrupti quam accusantium, itaque modi expedita provident labore aliquid?</p>
-                <a href="#" class="btn btn-primary shadow-sm">Go somewhere</a>
+                <a href="https://ridwandaduk.github.io/error-page/" class="btn btn-primary shadow-sm">Kunjungi</a>
               </div>
             </div>
           </div>
@@ -116,9 +127,9 @@
             <div class="card">
               <img src="project/formcontact.jpg" class="card-img-top" alt="project2" />
               <div class="card-body">
-                <h5 class="card-title">Form Contact</h5>
+                <h5 class="card-title fw-bold">Form Contact</h5>
                 <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, cumque. Alias, voluptas accusamus magnam unde quas eaque error dignissimos, nam saepe totam, neque distinctio ad.</p>
-                <a href="#" class="btn btn-primary shadow-sm">Go somewhere</a>
+                <a href="https://ridwandaduk.github.io/form-contact/" class="btn btn-primary shadow-sm">Kunjungi</a>
               </div>
             </div>
           </div>
@@ -135,7 +146,7 @@
                 <div class="card-body mt-md-3">
                     <form action="">
                         <div>
-                            <h4 style="text-align: center; padding: 1%;" class="mb-4">CONTACT US</h4>
+                            <h4 style="text-align: center; padding: 1%;" class="mb-4 fw-bold">CONTACT US</h4>
                         </div>
                         <div class="d-flex align-items-center justify-content-center gap-2 mb-2">
                             <input style="border-radius: 0%;" class="form-control form-control-sm" type="text"
@@ -165,7 +176,7 @@
     <!-- Akhir Contact -->
 
     <!-- Footer -->
-     <footer class="bg-primary text-white text-center fw-bold" style="padding: 1%;">
+     <footer class="text-black text-center" style="padding: 1%;">
       <p>Created by | Wahyu Ramadhan</p>
      </footer>
      <!-- Akhir Footer -->
