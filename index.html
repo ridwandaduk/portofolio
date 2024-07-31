@@ -7,27 +7,31 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
 
+
     <!-- CSS -->
     <link rel="stylesheet" href="style.css" />
 
     <style>
-      .btn-primary {
-        background-color: rgb(231, 231, 231);
-        color: black;
-        border: none;
-      }
+    .btn-primary:hover {
+      background: rgb(21, 53, 96);
+      background: linear-gradient(80deg, rgba(21, 53, 96, 1) 0%, rgba(37, 125, 164, 1) 46%, rgba(50, 220, 255, 1) 92%);
+    }
+    
+    .btn-primary {
+      color: white;
+      background: rgb(1, 38, 88);
+      background: linear-gradient(80deg, rgba(1, 38, 88, 1) 0%, rgba(13, 117, 164, 1) 46%, rgba(0, 212, 255, 1) 92%);
+      text-align: center;
+      border: 0px;
+    }
 
-      .btn-primary:hover {
-        background-color: black;
-        border-color: black;
-      }
     </style>
 
     <title>Portofolio</title>
   </head>
-  <body>
+  <body id="home">
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark shadow-sm bg-success">
+    <nav class="navbar navbar-expand-lg navbar-dark shadow-sm bg-success fixed-top">
       <div class="container">
         <a class="navbar-brand" href="#">Navbar</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -36,16 +40,16 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link active" aria-current="page" href="#home">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
+              <a class="nav-link" href="#about">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Projects</a>
+              <a class="nav-link" href="#projects">Projects</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
+              <a class="nav-link" href="#contact">Contact</a>
             </li>
           </ul>
         </div>
@@ -122,6 +126,49 @@
       </div>
     </section>
     <!-- Akhir Projects -->
+
+    <!-- Awal Contact -->
+    <section id="contact">
+      <div class="container">
+        <div class="row justify-content-center align-items-center" style="height: 100vh;">
+            <div class="card shadow" style="width: 30rem; height: 25rem; border-radius: 4%; ">
+                <div class="card-body mt-md-3">
+                    <form action="">
+                        <div>
+                            <h4 style="text-align: center; padding: 1%;" class="mb-4">CONTACT US</h4>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-center gap-2 mb-2">
+                            <input style="border-radius: 0%;" class="form-control form-control-sm" type="text"
+                                placeholder="Name" aria-label="name">
+                            <input style="border-radius: 0%;" class="form-control form-control-sm" type="text"
+                                placeholder="Email" aria-label="email">
+                        </div>
+                        <div class="d-flex align-items-center justify-content-center gap-2 mb-2">
+                            <input style="border-radius: 0%;" class="form-control form-control-sm" type="text"
+                                placeholder="Phone" aria-label="Phone">
+                            <input style="border-radius: 0%;" class="form-control form-control-sm" type="text"
+                                placeholder="Address" aria-label="Address">
+                        </div>
+
+                        <div class="mb-3">
+                            <textarea class="form-control form-control-sm" name="message" rows="4"
+                                placeholder="Message"></textarea>
+                        </div>
+                        <div class="d-grid gap-2 col-3 mx-auto pt-3">
+                            <button style="border-radius: none;" class="btn btn-primary" type="button">SUBMIT</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+          </div>
+    </section>
+    <!-- Akhir Contact -->
+
+    <!-- Footer -->
+     <footer class="bg-primary text-white text-center fw-bold" style="padding: 1%;">
+      <p>Created by | Wahyu Ramadhan</p>
+     </footer>
+     <!-- Akhir Footer -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
   </body>
 </html>
